@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: rgb(231, 229, 229);
+
+}
+body{
+    animation: opening 1s ease-in-out;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#3a3a3a;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.5;
+    
+}
+h1 {
+    font-size: 4rem;
+    font-family: "Pattaya",sans-serif;
+    font-weight: 400;
+    
+}
+header{
+    font-size:3rem;
+}
+li,p,a,code{
+    font-size: 1.5rem;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+#main-doc{
+    min-width: 60vw ;
+    margin-left:25rem;
+}
+.main-section{
+    width:90%;
+    margin:0 auto;
+}
+.main-section header{
+    padding:2rem;
+}
+.main-section p{
+    margin: 2rem;
+    
+}
+.main-section li{
+    margin: 2rem 2rem 2rem 5rem;
+
+}
+code{
+    display: block;
+    margin:2rem;
+    padding:2rem;
+    background-color: #d8d5d5;
+    border-radius: 1%;
+    width:100%;
+}
+#navbar{
+    min-width: 15vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position:fixed;
+    top:0;
+    left: 0px;
+    border-right: 5px #3a3a3a solid;
+    background-color: #3a3a3a;
+    color:#d8d5d5;
+}
+#navbar header{
+    padding:1.5rem;
+    margin-top:20px;
+}
+#navbar a{
+    width:100%;
+    display: block;
+    padding: 10px 30px;
+    color:#d8d5d5;
+    text-decoration:none;
+}
+#navbar a:hover{
+    animation: movex 2s ease infinite;
+}
+.container{
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width:650px){
+    html{
+        font-size:50%;
+    }
+    #navbar{
+        position: static;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom:3px;
+    }
+   #navbar a{
+       border-top:2px solid white;
+   }
+   #main-doc{
+        width: 90%;
+        margin: 0 auto;
+   }
+}
+@keyframes movex{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
