@@ -85,10 +85,9 @@ code{
     padding: 10px 30px;
     color:#d8d5d5;
     text-decoration:none;
+    cursor: pointer;
 }
-#navbar a:hover{
-    animation: movex 2s ease infinite;
-}
+
 .container{
     position: relative;
     width: 100%;
@@ -113,12 +112,4 @@ code{
         width: 90%;
         margin: 0 auto;
    }
-}
-@keyframes movex{
-    from{
-        transform: translateX(0%);
-    }
-    to{
-        transform: translateX(20%);
-    }
 }
